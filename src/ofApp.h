@@ -21,9 +21,13 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+        string markovRun();
     
         vector <Ngram> ngrams;
         Ngram ng;
-
+        int order;
+        string sample_text;
+        ofTrueTypeFont font;
+        string markov_result;
 		
 };

@@ -16,5 +16,6 @@ class Ngram{
 public:
     string ngram_text;
     int number_of_instances;
+    vector<string>next_character;
 };
 #endif /* ngram_hpp */
